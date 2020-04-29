@@ -1,0 +1,84 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/widget_margin">
+
+
+    <ImageView
+        android:id="@+id/imgAudio"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_70"
+        android:background="@color/green"
+        android:src="@drawable/ic_audiotrack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize_16sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/Artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="@string/artist_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize_12sp"
+                android:ellipsize="end"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/Elapsedtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_2"
+                android:maxLines="1"
+                android:text="@string/elapsed_time"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/fontSize_12sp" />
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="@dimen/dp_66"
+            android:layout_height="@dimen/dp_66"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:background="@drawable/play"
+            android:padding="@dimen/dp_2" />
+    </LinearLayout>
+
+</LinearLayout>
